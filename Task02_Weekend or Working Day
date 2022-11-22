@@ -1,0 +1,49 @@
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+int main()
+{
+	std::string day;
+
+	std::cin >> day;
+
+	string dayType;
+	
+	if (day == "Monday")
+	{
+		dayType = "Working day";
+	}
+	else if (day == "Tuesday")
+	{
+		dayType = "Working day";
+	}
+	else if (day == "Wednesday")
+	{
+		dayType = "Working day";
+	}
+	else if (day == "Thursday")
+	{
+		dayType = "Working day";
+	}
+	else if (day == "Friday")
+	{
+		dayType = "Working day";
+	}
+	else if (day == "Saturday")
+	{
+		dayType = "Weekend";
+	}
+	else if (day == "Sunday")
+	{
+		dayType = "Weekend";
+	}
+	else 
+	{
+		dayType = "Error";
+	}
+
+	std::cout << dayType << std::endl;
+	return 0;
+}
