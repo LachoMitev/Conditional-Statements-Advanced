@@ -4,23 +4,19 @@ int main()
 {
 	std::string product;
 	std::cin >> product;
-	
-	std::string food;
 
-	if (product == "banana" || product == "apple" || product == "kiwi" || product == "lemon" || product == "cherry" || product == "grapes")
+	if (product == "banana" || product == "apple" || product == "kiwi" || product == "lemon" || product =="cherry" || product == "grapes")
 	{
-		food = "fruit";
+		std::cout << "fruit" << std::endl;
 	}
 	else if (product == "tomato" || product == "cucumber" || product == "pepper" || product == "carrot")
 	{
-		food = "vegetable";
+		std::cout << "vegetable" << std::endl;
 	}
 	else 
 	{
-		food = "unknown";
+		std::cout << "unknown" << std::endl;
 	}
-
-	std::cout << food << std::endl;
-
+	
 	return 0;
 }
