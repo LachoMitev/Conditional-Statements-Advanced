@@ -1,0 +1,38 @@
+#include <iostream>
+
+#include <string.h>
+
+int main()
+{
+	double age;
+	std::cin >> age;
+
+	char gender;
+	std::cin >> gender;
+
+
+	if (age >= 16)
+	{
+		if (gender == 'm')
+		{
+			std::cout << "Mr." << std::endl;
+		}
+		else
+		{
+			std::cout << "Ms." << std::endl;
+		}
+	}
+	else
+	{
+		if (gender == 'm')
+		{
+			std::cout << "Master" << std::endl;
+		}
+		else 
+		{
+			std::cout << "Miss" << std::endl;
+		}
+	}
+
+	return 0;
+}
