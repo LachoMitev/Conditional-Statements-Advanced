@@ -1,0 +1,26 @@
+#include <iostream>
+
+int main()
+{
+	std::string product;
+	std::cin >> product;
+	
+	std::string food;
+
+	if (product == "banana" || product == "apple" || product == "kiwi" || product == "lemon" || product == "cherry" || product == "grapes")
+	{
+		food = "fruit";
+	}
+	else if (product == "tomato" || product == "cucumber" || product == "pepper" || product == "carrot")
+	{
+		food = "vegetable";
+	}
+	else 
+	{
+		food = "unknown";
+	}
+
+	std::cout << food << std::endl;
+
+	return 0;
+}
