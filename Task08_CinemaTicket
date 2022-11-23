@@ -1,0 +1,25 @@
+#include <iostream>
+
+int main()
+{
+	std::string day;
+	std::cin >> day;
+	
+
+	if (day == "Monday" || day == "Tuesday" || day == "Friday")
+	{
+		std::cout << "12" << std::endl;
+	}
+	else if (day == "Wednesday" || day == "Thursday")
+	{
+		std::cout << "14" << std::endl;
+	}
+	else if (day == "Saturday" || day == "Sunday")
+	{
+		std::cout << "16" << std::endl;
+	}
+
+	
+
+	return 0;
+}
