@@ -1,0 +1,79 @@
+#include <iostream>
+
+
+int main()
+{
+	std::string fruit;
+
+	std::string day;
+
+	std::cin >> fruit >> day;
+
+	double qty;
+	std::cin >> qty;
+
+	double fruitPrice = 0.0;
+
+	if (day == "Saturday" || day == "Sunday")
+	{
+		if (fruit == "banana") 
+			fruitPrice = 2.70;
+		
+		else if (fruit == "apple")
+			fruitPrice = 1.25;
+
+		else if (fruit == "orange")
+			fruitPrice = 0.90;
+
+		else if (fruit == "grapefruit")
+			fruitPrice = 1.60;
+
+		else if(fruit == "kiwi")
+			fruitPrice = 3.00;
+
+		else if (fruit == "pineapple")
+			fruitPrice = 5.60;
+
+		else if (fruit == "grapes")
+			fruitPrice = 4.20;
+	}
+	else if (day == "Monday" || day == "Tuesday" || day == "Wednesday" || day == "Thursday" || day == "Friday")
+	{
+		if(fruit == "banana")
+			fruitPrice = 2.50;
+
+	else if (fruit == "apple")
+		fruitPrice = 1.20;
+
+	else if (fruit == "orange")
+		fruitPrice = 0.85;
+
+	else if (fruit == "grapefruit")
+		fruitPrice = 1.45;
+
+	else if (fruit == "kiwi")
+		fruitPrice = 2.70;
+
+	else if (fruit == "pineapple")
+		fruitPrice = 5.50;
+
+	else if (fruit == "grapes")
+		fruitPrice = 3.85;
+	}
+
+	double endPrice = qty * fruitPrice;
+
+	if (fruitPrice > 0)
+	{
+		std::cout.precision(2);
+		std::cout << std::fixed;
+		std::cout << endPrice << std::endl;
+	}
+	else
+	{
+		std::cout << "error" << std::endl;
+	}
+	
+	return 0;
+}
+
